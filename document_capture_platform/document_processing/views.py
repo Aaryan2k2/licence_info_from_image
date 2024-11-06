@@ -35,10 +35,7 @@ def extract_info(text):
     return name, document_number, expiration_date
 
 def handle_uploaded_file(uploaded_file):
-    """
-    Handle file uploads and extract text from the file.
-    Supports image files only.
-    """
+    
     # Use Tesseract to extract text from the image
     image = Image.open(uploaded_file)
     text = pytesseract.image_to_string(image)
