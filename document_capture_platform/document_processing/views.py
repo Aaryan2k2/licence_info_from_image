@@ -6,7 +6,6 @@ from .forms import DocumentForm
 from .models import Document
 import re
 
-# Specify the path to your Tesseract executable
 pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract.exe'  # Update this for your system
 
 
